@@ -41,18 +41,18 @@ export default function App() {
 
         {/* Buttons with Icons - Left */}
         <section className="mb-12">
-          <h2 className="mb-4">With Icons (Left)</h2>
+          <h2 className="mb-4">With Icons</h2>
           <div className="flex flex-wrap items-center gap-4">
-            <Button variant="primary" size="xs" iconPosition="left" icon={<PlusIcon size={16} fill="white" />}>
+            <Button variant="primary" size="xs" icon={<PlusIcon size={16} fill="white" />}>
               Add Item
             </Button>
-            <Button variant="primary" size="s" iconPosition="left" icon={<PlusIcon size={16} fill="white" />}>
+            <Button variant="primary" size="s" icon={<PlusIcon size={16} fill="white" />}>
               Add Item
             </Button>
-            <Button variant="primary" size="m" iconPosition="left" icon={<PlusIcon size={24} fill="white" />}>
+            <Button variant="primary" size="m" icon={<PlusIcon size={24} fill="white" />}>
               Add Item
             </Button>
-            <Button variant="primary" size="l" iconPosition="left" icon={<PlusIcon size={24} fill="white" />}>
+            <Button variant="primary" size="l" icon={<PlusIcon size={24} fill="white" />}>
               Add Item
             </Button>
           </div>
@@ -139,7 +139,6 @@ export default function App() {
             <Button 
               variant="black" 
               size="l"
-              iconPosition="left"
               icon={<PlusIcon size={24} fill="#fafafa" />}
               onClick={() => alert('Black with icon clicked!')}
             >
@@ -148,8 +147,6 @@ export default function App() {
             <Button 
               variant="destructive" 
               size="m"
-              iconPosition="right"
-              icon={<LoaderIcon size={24} fill="#d8400c" />}
               onClick={() => alert('Destructive clicked!')}
             >
               Delete
