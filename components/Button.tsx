@@ -3,13 +3,11 @@ import svgPaths from '../imports/svg-fg62w5i9ym';
 
 type ButtonVariant = 'primary' | 'black' | 'white' | 'gray' | 'destructive' | 'disabled' | 'glass' | 'outline';
 type ButtonSize = 'xs' | 's' | 'm' | 'l';
-type IconPosition = 'left' | 'right' | 'none';
 
 interface ButtonProps {
   children: ReactNode;
   variant?: ButtonVariant;
   size?: ButtonSize;
-  iconPosition?: IconPosition;
   icon?: ReactNode;
   onClick?: () => void;
   disabled?: boolean;
@@ -20,7 +18,6 @@ export function Button({
   children,
   variant = 'primary',
   size = 'm',
-  iconPosition = 'none',
   icon,
   onClick,
   disabled = false,
@@ -39,18 +36,15 @@ export function Button({
       onClick={onClick}
       disabled={disabled}
     >
-      {iconPosition === 'left' && icon && (
+      {icon && (
         <span className="mts-button__icon">{icon}</span>
       )}
       <span className="mts-button__content">{children}</span>
-      {iconPosition === 'right' && icon && (
-        <span className="mts-button__icon">{icon}</span>
-      )}
     </button>
   );
 }
 
-// Пр��дустановленные иконки из дизайна
+// Предустановленные иконки из дизайна
 export function PlusIcon({ size = 24, fill = 'white' }: { size?: number; fill?: string }) {
   const path = size === 16 ? svgPaths.p10f42300 : svgPaths.p37467100;
 
