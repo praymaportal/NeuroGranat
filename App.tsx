@@ -58,25 +58,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* Buttons with Icons - Right */}
-        <section className="mb-12">
-          <h2 className="mb-4">With Icons (Right)</h2>
-          <div className="flex flex-wrap items-center gap-4">
-            <Button variant="black" size="xs" iconPosition="right" icon={<LoaderIcon size={16} fill="#fafafa" />}>
-              Loading
-            </Button>
-            <Button variant="black" size="s" iconPosition="right" icon={<LoaderIcon size={16} fill="#fafafa" />}>
-              Loading
-            </Button>
-            <Button variant="black" size="m" iconPosition="right" icon={<LoaderIcon size={24} fill="#fafafa" />}>
-              Loading
-            </Button>
-            <Button variant="black" size="l" iconPosition="right" icon={<LoaderIcon size={24} fill="#fafafa" />}>
-              Loading
-            </Button>
-          </div>
-        </section>
-
         {/* All variants in different sizes */}
         <section className="mb-12">
           <h2 className="mb-4">All Variants Grid</h2>
